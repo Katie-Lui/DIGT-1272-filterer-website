@@ -5,8 +5,51 @@
         <meta charset="UTF-8">
         <title>[insert title here]</title>
     </head>  
-    
+
     <body>
-        
+        <div class="main-center">
+            <!-- desc (of the features of the website(description of the feature (what thing does)))-->
+            <section class="desc">
+                <p>This website allows you to input an image to see what it looks like with a filter on it. We have a red tinted filter and a blue tinted filter!</p>
+            </section>
+
+
+            <!-- instructions(how it works)-->
+            <section id="instructions">
+                <p>To use our website, just press the Chooose File button and open the image you would like to filter!</p>
+            </section>
+
+            <!-- area for inputting image-->
+                <section>
+                    <form>
+                        <label for="pic">Upload a picture:</label>
+                        <input type="file" accept="image/*" name="pic" id="pic">
+                    </form>
+                    <section>
+                        <!--section that can be resized and blue border can be added
+                        image will be dispkayed here when imported-->
+                        <img src="" alt="display of imported image" id="imported-img" style="display: none">
+                        <section>
+                            <!--set background colour to red and kinda translucent using alpha, and display:none which can be togged by button, and z value to a high num
+                            when blue-tint button is pressed, change bg color to blue-->
+                        </section>
+                    </section>
+                </section>
+            <!--filtering options-->
+                <!--for red green colorblindness, red tinted filter-->
+                    <fieldset>
+                        <button type="button">
+                            <strong>Red-Tinted Filter</strong>
+                        </button>
+                    <!--for blue yellow colourblindness, blue tinted filter-->
+                        <button type="button">
+                            <strong>Blue-Tinted Filter</strong>
+                        </button>
+                    </fieldset>
+            <!-- seperate section on right for example photos-->
+            <section>
+                
+            </section>
+         </div>
     </body>
 </html>
