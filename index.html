@@ -3,23 +3,61 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>[insert title here]</title>
+        <title>Color Filter Website</title>
     </head>  
 
     <body>
+
+        <!--HEADER-->
+        <div id="header">
+            <!--Logo-->
+            <img src="images/color_filter_logo.png" alt="color_filter_logo" width="100px" height="100px">
+            
+            <!--Name-->
+            <h1>Color Filtering Web</h1>
+
+            <!--login-->
+            <p><button id="login_button">Login</button></p>
+
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <!--MAIN-->
+        <!--left side-->
+        <div id="main-left">
+            <!--links-->
+            <p>
+                Links to this page:
+
+                <ul>
+                    <li><a href="#desc">Description</a></li>
+                    <li><a href="#instr">Instructions</a></li>
+                    <li><a href="#filter">Filter</a></li>
+                    <li><a href="thanks">Thank You</a></li>
+                </ul>
+            </p>
+        </div>
+
+        <!--middle/center-->
         <div class="main-center">
             <!-- desc (of the features of the website(description of the feature (what thing does)))-->
-            <section class="desc">
-                <p>This website allows you to input an image to see what it looks like with a filter on it. We have a red tinted filter and a blue tinted filter!</p>
-            </section>
-
+            <div id="desc">
+                <section  class="desc">
+                    <p>This website allows you to input an image to see what it looks like with a filter on it. We have a red tinted filter and a blue tinted filter!</p>
+                </section>
+            </div>
 
             <!-- instructions(how it works)-->
-            <section id="instructions">
-                <p>To use our website, just press the Chooose File button and open the image you would like to filter!</p>
-            </section>
+            <div id="instr">
+                <section id="instructions">
+                    <p>To use our website, just press the Chooose File button and open the image you would like to filter!</p>
+                </section>
+            </div>
 
             <!-- area for inputting image-->
+            <div id="filter">
                 <section>
                     <form>
                         <label for="pic">Upload a picture:</label>
@@ -35,21 +73,26 @@
                         </section>
                     </section>
                 </section>
-            <!--filtering options-->
-                <!--for red green colorblindness, red tinted filter-->
-                    <fieldset>
-                        <button type="button">
-                            <strong>Red-Tinted Filter</strong>
-                        </button>
-                    <!--for blue yellow colourblindness, blue tinted filter-->
-                        <button type="button">
-                            <strong>Blue-Tinted Filter</strong>
-                        </button>
-                    </fieldset>
-            <!-- seperate section on right for example photos-->
-            <section>
-                
-            </section>
-         </div>
+                <!--filtering options-->
+                    <!--for red green colorblindness, red tinted filter-->
+                        <fieldset>
+                            <button type="button">
+                                <strong>Red-Tinted Filter</strong>
+                            </button>
+                        <!--for blue yellow colourblindness, blue tinted filter-->
+                            <button type="button">
+                                <strong>Blue-Tinted Filter</strong>
+                            </button>
+                        </fieldset>
+            </div>
+        
+        </div>
+
+        <!--right side-->
+        <!-- seperate section on right for example photos-->
+        <section>
+            
+        </section>
+        
     </body>
 </html>
