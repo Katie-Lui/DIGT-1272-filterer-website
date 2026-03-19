@@ -12,55 +12,71 @@
 
         <!--HEADER-->
         <div id="header">
-            <!--Logo-->
-            <img src="images/color_filter_logo.png" alt="color_filter_logo" style="width: 100px; height: 100px">
-            
-            <!--Name-->
-            <h1>Color Filtering Web</h1>
+            <div id="left">
+                <!--Logo-->
+                <img src="images/color_filter_logo.png" alt="color_filter_logo" id="logo" width="100px" height="100px">
+                
+                <!--Name-->
+                <h1>Color Filtering Web</h1>
+            </div>
 
             <!--login-->
-            <p><button id="login_button">Login</button></p>
-
-            <br>
-            <hr>
-            <br>
+            <button id="login_button">Login</button>
         </div>
 
+        <hr>
 
         <!--MAIN-->
-        <!--left side-->
-        <div id="main-left">
-            <!--links-->
-            <p>
-                Links to this page: 
-            </p>
+        <div id="main">
+            <!--left side-->
+            <div id="main-left">
+                <!--links-->
+                <section id="links-title">Links to this page:</section>
 
-                <ul>
+                <ul id="link-list">
                     <li><a href="#desc">Description</a></li>
                     <li><a href="#instr">Instructions</a></li>
-                    <li><a href="#filter">Filter</a></li>
-                    <li><a href="thanks">Thank You</a></li>
+                    <li><a href="#filter-div">Filter</a></li>
+                    <li><a href="#thanks">Thank You</a></li>
                 </ul>
-        </div>
-
-        <!--middle/center-->
-        <div class="main-center">
-            <!-- desc (of the features of the website(description of the feature (what thing does)))-->
-            <div id="desc">
-                <section  class="desc">
-                    <p>This website allows you to input an image to see what it looks like with a filter on it. We have a red tinted filter and a blue tinted filter!</p>
-                </section>
             </div>
 
-            <!-- instructions(how it works)-->
-            <div id="instr">
-                <section id="instructions">
-                    <p>To use our website, just press the Choose File button and open the image you would like to filter!</p>
-                </section>
-            </div>
+            <!--middle/center-->
+            <div id="main-center">
+                <!-- desc (of the features of the website(description of the feature (what thing does)))-->
+                <div id="desc">
+                    <section  id="desc-title">
+                        Description
+                    </section>
+                    <section  id="desc-p1">
+                        While taking the course Mobilizing Digital Citizenship we learned that there are many ways technology has 
+                        helped make life more convienent for people with disabilities. With what we learned we understood that there are many 
+                        people who suffer from visual imparements. This includes color blindness. We have studied different types of color blindness 
+                        such as red-green color blindness (deuteranomaly, protanomaly, deuteranopia) and blue-yellow color blindness (tritanomaly, 
+                        tritanopia). 
+                    </section>
+                    <section  id="desc-p2">
+                        With our research we have learned that emphasizing a certain color can help distinguish between the colors they would usually 
+                        struggle seeing. Therefore we have created a webpage that allows you to pass a photo into the generator and will place a filter 
+                        over the image helping emphasize specific colors.
+                    </section>
+                </div>
+
+                <!-- instructions(how it works)-->
+                <div id="instr">
+                    <section id="instructions">
+                        To use our website is simple, you only need to follow 3 simple steps.
+                        <ol>
+                            <li>Download the image you wish to put a filter over.</li>
+                            <li>Click on the <em>Choose File</em> button and upload your image.</li>
+                            <li>Click either the <em>red-tint filter</em> or the <em>blue-tint filter</em> to view the image with the filter.</li>
+                        </ol>
+                        And done! Simple as that.
+                    </section>
+                </div>
 
             <!-- area for inputting image-->
-            <div>
+            <div id="filter-div">
                 <section id="filter-area">
                     <form>
                         <label for="pic">Upload a picture:</label>
@@ -91,18 +107,23 @@
                             </button>
                         </fieldset>
             </div>
+
+            <div id="thanks">
+                    Thank you for using our website. If you have anyy feedback please contact 
+            </div>
         
         </div>
 
-        <!--right side-->
-        <!-- seperate section on right for example photos-->
-        <section>
-            
-        </section>
-        
-        <br>
-        <hr>
-        <br>
+            <!--right side-->
+            <!-- seperate section on right for example photos-->
+            <div id="main-right">
+                <section>
+                    right side blank
+                </section>
+            </div>
+        </div>
+
+        <hr id="credits">
 
         <!--FOOTER-->
         <!--credits-->
