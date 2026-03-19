@@ -70,7 +70,7 @@
                         <!--section that can be resized and blue border can be added
                         image will be dispkayed here when imported-->
                         <img src="" alt="display of imported image" id="imported-img" style="display: none">
-                        <section>
+                        <section id="filter">
                             <!--set background colour to red and kinda translucent using alpha, and display:none which can be togged by button, and z value to a high num
                             when blue-tint button is pressed, change bg color to blue-->
                         </section>
@@ -79,7 +79,7 @@
                 <!--filtering options-->
                     <!--for red green colorblindness, red tinted filter-->
                         <fieldset>
-                            <button type="button">
+                            <button type="button" onclick="red()">
                                 <strong>Red-Tinted Filter</strong>
                             </button>
                         <!--for blue yellow colourblindness, blue tinted filter-->
