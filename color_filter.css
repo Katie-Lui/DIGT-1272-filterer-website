@@ -1,0 +1,16 @@
+/* filter positioning css */
+#filter-area {
+    position: relative;
+    display: inline-block;
+}
+
+#filter {
+    width: 300px; /* make width and height of filter-area and filter match size of imported img */
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: black;
+}
