@@ -82,7 +82,27 @@ li a:hover {
     margin: 5px;
     padding: 15px;
     background-color: rgb(250, 207, 170);
-    height: 100vh;
+    height: 150vh;
+}
+
+#desc-title {
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#desc-p1 {
+    font-size: 18px;
+    padding: 15px;
+    text-indent: 30px;
+    line-height: 1.3;
+}
+
+#desc-p2 {
+    font-size: 18px;
+    padding: 15px;
+    text-indent: 30px;
+    line-height: 1.3;
 }
 
 /*right side*/ 
@@ -91,7 +111,7 @@ li a:hover {
     margin: 5px;
     padding: 15px;
     background-image: linear-gradient(to bottom, rgb(255, 162, 119), rgb(250, 219, 170));
-    height: 100vh;
+    height: 150vh;
     size: 16pt;
 }
 
