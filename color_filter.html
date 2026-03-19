@@ -36,7 +36,7 @@
                 <ul id="link-list">
                     <li><a href="#desc">Description</a></li>
                     <li><a href="#instr">Instructions</a></li>
-                    <li><a href="#filter">Filter</a></li>
+                    <li><a href="#filter-div">Filter</a></li>
                     <li><a href="#thanks">Thank You</a></li>
                 </ul>
             </div>
@@ -75,41 +75,44 @@
                     </section>
                 </div>
 
-                <!-- area for inputting image-->
-                <div id="filter">
+            <!-- area for inputting image-->
+            <div id="filter-div">
+                <section id="filter-area">
+                    <form>
+                        <label for="pic">Upload a picture:</label>
+                        <input type="file" name="pic" id="pic" onChange="handleImageUpload()">
+                    </form>
                     <section>
-                        <form>
-                            <label for="pic">Upload a picture:</label>
-                            <input type="file" accept="image/*" name="pic" id="pic">
-                        </form>
-                        <section>
-                            <!--section that can be resized and blue border can be added
-                            image will be dispkayed here when imported-->
-                            <img src="" alt="display of imported image" id="imported-img" style="display: none">
-                            <section id="filter">
-                                <!--set background colour to red and kinda translucent using alpha, and display:none which can be togged by button, and z value to a high num
-                                when blue-tint button is pressed, change bg color to blue-->
-                            </section>
+                        <!--section that can be resized and blue border can be added
+                        image will be displayed here when imported-->
+                        <img src="" alt="display of imported image" id="imported-img-display" style="width: 300px; height: auto; border: 1px purple">
+                        <section id="filter"> <!-- change height to that of the imprted image-->
+                            <!--set background colour to red and kinda translucent using alpha, and display:none which can be togged by button, and z value to a high num
+                            when blue-tint button is pressed, change bg color to blue-->
                         </section>
                     </section>
-                    <!--filtering options-->
-                        <!--for red green colorblindness, red tinted filter-->
-                            <fieldset>
-                                <button type="button" onclick="red()">
-                                    <strong>Red-Tinted Filter</strong>
-                                </button>
-                            <!--for blue yellow colourblindness, blue tinted filter-->
-                                <button type="button">
-                                    <strong>Blue-Tinted Filter</strong>
-                                </button>
-                            </fieldset>
-                </div>
-
-                <div id="thanks">
-                    Thank you for using our website. If you have anyy feedback please contact 
-                </div>
-            
+                </section>
+                <!--filtering options-->
+                    <!--for red green colorblindness, red tinted filter-->
+                        <fieldset>
+                            <button type="button" onclick="clearFilter()">
+                                <strong>No Filter</strong>
+                            </button>
+                            <button type="button" onclick="red()">
+                                <strong>Red-Tinted Filter</strong>
+                            </button>
+                        <!--for blue yellow colourblindness, blue tinted filter-->
+                            <button type="button" onclick="blue()">
+                                <strong>Blue-Tinted Filter</strong>
+                            </button>
+                        </fieldset>
             </div>
+
+            <div id="thanks">
+                    Thank you for using our website. If you have anyy feedback please contact 
+            </div>
+        
+        </div>
 
             <!--right side-->
             <!-- seperate section on right for example photos-->
