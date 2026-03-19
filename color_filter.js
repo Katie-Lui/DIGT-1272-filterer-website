@@ -1,39 +1,6 @@
 const fileInput = document.getElementById("pic");
 const imagePreview = document.getElementById("imported-img-display");
 
-/*
-fileInput.addEventListener("change", 
-    function() {
-        const file = this.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-
-        reader.addEventListener("load", 
-            function() {
-                imagePreview.src = this.result;
-                imagePreview.style.display = "block";
-            }
-        );
-
-        reader.readAsDataURL(file);
-    }
-}); */
-
-/*
-document.getElementById("pic").addEventListener("change", function (event) {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = function (e) {
-        const previewImage = document.getElementById("imported-img-display");
-        previewImage.src = e.target.result;
-        previewImage.style.display = "block";
-    };
-    reader.readAsDataURL(file);
-});*/
-
 // Source - https://stackoverflow.com/a/49942870
 // Posted by Harish Soni, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-03-19, License - CC BY-SA 3.0
