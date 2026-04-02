@@ -1,5 +1,6 @@
 const fileInput = document.getElementById("pic");
 const imagePreview = document.getElementById("imported-img-display");
+let bgColor = "none";
 
 // Source - https://stackoverflow.com/a/49942870
 // Posted by Harish Soni, modified by community. See post 'Timeline' for change history
@@ -22,27 +23,38 @@ var image = document.getElementById("pic").files[0];
     }
 
     reader.readAsDataURL(image);
-
-
 } 
 
+let opacityChanger = document.getElementById("opacityChanger");
 
+opacityChanger.addEventListener("input", opacityChange);
 
+function opacityChange() {
+    if (bgColor == "red") {
+        document.getElementById('filter').style.backgroundColor = "hsla(0, 100%, 50%, " + opacityChanger.value/100 + ")";
+    }
+    else if (bgColor == "blue") {
+        document.getElementById('filter').style.backgroundColor = "hsla(240, 100%, 50%, " + opacityChanger.value/100 + ")";
+    }
+}
 
 
 /* i would like to make the alpha value (and maybe even all the color values) adjustable via range picker or color picer circle thingyyy */
 function red() {
     document.getElementById('filter').style.display = "block";
     document.getElementById('filter').style.backgroundColor = "hsla(0, 100%, 50%, 0.5)";
+    bgColor = "red";
 }
 
 function blue() {
     document.getElementById('filter').style.display = "block";
     document.getElementById('filter').style.backgroundColor = "hsla(240, 100%, 50%, 0.5)";
+    bgColor = "blue";
 }
 
 function clearFilter() {
     document.getElementById('filter').style.display = "none";
+    bgColor = "none";
 }
 
 

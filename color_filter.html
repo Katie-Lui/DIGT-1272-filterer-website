@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Color Filter Website</title>
         <link href="color_filter.css" type="text/css" rel="stylesheet">
-        <script src="color_filter.js"></script>
+        <script src="color_filter.js" defer></script>
     </head>  
 
     <body>
@@ -91,6 +91,11 @@
                             when blue-tint button is pressed, change bg color to blue-->
                         </section>
                     </section>
+                </section>
+
+                <section>
+                    <label for="opacityChanger"><i>Slide to change filter opacity!!</i></label>
+                    <input id="opacityChanger" type="range" min="0" max="100" value="50">
                 </section>
                 <!--filtering options-->
                     <!--for red green colorblindness, red tinted filter-->
