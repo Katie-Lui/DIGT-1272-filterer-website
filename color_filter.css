@@ -162,3 +162,10 @@ li a:hover {
     /*grid-area: 1/1;*/
     z-index: 0;
 }
+
+@media (max-width: 1031px) {
+    #filter {
+        top: 45px;
+        height: 80%;
+    }
+}
