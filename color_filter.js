@@ -14,9 +14,15 @@ var image = document.getElementById("pic").files[0];
 
     reader.onload = function(e) {
       document.getElementById("imported-img-display").src = e.target.result;
+      
+      width = document.getElementById("imported-img-display").width;
+      height = document.getElementById("imported-img-display").height;
+      console.log(width);
+      document.getElementById('filter').height = height
     }
 
     reader.readAsDataURL(image);
+
 
 } 
 
